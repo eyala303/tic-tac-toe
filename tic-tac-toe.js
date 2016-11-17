@@ -19,3 +19,21 @@ function makeshape(){
    var canvas =  document.getElementById("game-board")
    canvas.appendChild(circle)
 }
+function poptart (){
+  var circle =  document.createElementNS(namespace,"circle")
+  circle.setAttribute("cx",180)
+  circle.setAttribute("cy",50)
+  circle.setAttribute("r",15)
+  circle.setAttribute("fill","red")
+   var canvas =  document.getElementById("game-board")
+   canvas.appendChild(circle)
+}
+function bigboy(){
+var circle =  document.createElementNS(namespace,"circle")
+circle.setAttribute("cx",60)
+circle.setAttribute("cy",120)
+circle.setAttribute("r",15)
+circle.setAttribute("fill","red")
+ var canvas =  document.getElementById("game-board")
+ canvas.appendChild(circle)
+}
