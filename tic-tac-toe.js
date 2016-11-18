@@ -37,3 +37,21 @@ circle.setAttribute("fill","red")
  var canvas =  document.getElementById("game-board")
  canvas.appendChild(circle)
 }
+function fooshigi(){
+  var circle =  document.createElementNS(namespace,"circle")
+  circle.setAttribute("cx",120)
+  circle.setAttribute("cy",120)
+  circle.setAttribute("r",15)
+  circle.setAttribute("fill","red")
+   var canvas =  document.getElementById("game-board")
+   canvas.appendChild(circle)
+}
+function shaq(){
+  var circle =  document.createElementNS(namespace,"circle")
+  circle.setAttribute("cx",150)
+  circle.setAttribute("cy",120)
+  circle.setAttribute("r",15)
+  circle.setAttribute("fill","red")
+   var canvas =  document.getElementById("game-board")
+   canvas.appendChild(circle)
+}
