@@ -1,6 +1,9 @@
 // Write all your JavaScript code in this file!
 // You can use the namespace variable that's defined here.
 var namespace = "http://www.w3.org/2000/svg"
+
+var turn = "player1"
+
 function makeshape(){
   var circle =  document.createElementNS(namespace,"circle")
   circle.setAttribute("cx",60)
@@ -74,20 +77,23 @@ circle.setAttribute("fill","red")
  canvas.appendChild(circle)
 }
 function smallpotato(){
-  var circle =  document.createElementNS(namespace,"circle")
-circle.setAttribute("cx",120)
-circle.setAttribute("cy",170)
-circle.setAttribute("r",15)
-circle.setAttribute("fill","red")
- var canvas =  document.getElementById("game-board")
- canvas.appendChild(circle)
-}
-function topMiddle(){
   if(turn=="player1"){
-    var circle =  document.createElementNS(namespace,"circle")
-    circle.setAttribute("cx",170)
-    circle.setAttribute("cy",170)
-    circle.setAttribute("r",15)
-    circle.setAttribute("fill","red")
-    var canvas =  document.getElementById("game-board")
-    canvas.appendChild(circle) 
+  var circle = document.createElementNS(namespace,"circle")
+  circle.setAttribute("cx",120)
+  circle.setAttribute("cy",170)
+  circle.setAttribute("r",15)
+  circle.setAttribute("fill","blue")
+  var canvas = document.getElementById("game-board")
+  canvas.appendChild(circle)
+  turn ="player2"
+} else {
+  var circle = document.createElementNS(namespace,"circle")
+  circle.setAttribute("cx",120)
+  circle.setAttribute("cy",170)
+  circle.setAttribute("r",15)
+  circle.setAttribute("fill","red")
+  var canvas = document.getElementById("game-board")
+  canvas.appendChild(circle)
+  turn="player1"
+}
+}
