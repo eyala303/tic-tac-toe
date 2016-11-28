@@ -39,7 +39,7 @@ circle.setAttribute("fill","red")
 }
 function fooshigi(){
   var circle =  document.createElementNS(namespace,"circle")
-  circle.setAttribute("cx",120)
+  circle.setAttribute("cx",170)
   circle.setAttribute("cy",120)
   circle.setAttribute("r",15)
   circle.setAttribute("fill","red")
@@ -48,10 +48,46 @@ function fooshigi(){
 }
 function shaq(){
   var circle =  document.createElementNS(namespace,"circle")
-  circle.setAttribute("cx",150)
+  circle.setAttribute("cx",120)
   circle.setAttribute("cy",120)
   circle.setAttribute("r",15)
   circle.setAttribute("fill","red")
    var canvas =  document.getElementById("game-board")
    canvas.appendChild(circle)
 }
+function potato(){
+  var circle =  document.createElementNS(namespace,"circle")
+circle.setAttribute("cx",60)
+circle.setAttribute("cy",170)
+circle.setAttribute("r",15)
+circle.setAttribute("fill","red")
+ var canvas =  document.getElementById("game-board")
+ canvas.appendChild(circle)
+}
+function bigpotato(){
+  var circle =  document.createElementNS(namespace,"circle")
+circle.setAttribute("cx",170)
+circle.setAttribute("cy",170)
+circle.setAttribute("r",15)
+circle.setAttribute("fill","red")
+ var canvas =  document.getElementById("game-board")
+ canvas.appendChild(circle)
+}
+function smallpotato(){
+  var circle =  document.createElementNS(namespace,"circle")
+circle.setAttribute("cx",120)
+circle.setAttribute("cy",170)
+circle.setAttribute("r",15)
+circle.setAttribute("fill","red")
+ var canvas =  document.getElementById("game-board")
+ canvas.appendChild(circle)
+}
+function topMiddle(){
+  if(turn=="player1"){
+    var circle =  document.createElementNS(namespace,"circle")
+    circle.setAttribute("cx",170)
+    circle.setAttribute("cy",170)
+    circle.setAttribute("r",15)
+    circle.setAttribute("fill","red")
+    var canvas =  document.getElementById("game-board")
+    canvas.appendChild(circle) 
